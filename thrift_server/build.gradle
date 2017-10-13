@@ -18,8 +18,6 @@ project.group = 'ts_grp'
 project.version = '2.0'
 jar.baseName = 'ts_art'
 
-//############
-
 repositories {
     mavenLocal()
     jcenter()
@@ -32,21 +30,6 @@ uploadArchives {
         }
     }
 }
-
-task thrift(type:Exec) {
-    //on windows:
-    commandLine 'thrift', '--gen', 'java', '-out', '/Users/srh/git_repos/thrift/thrift_server/src/main/java src/thrift/QueryRemote.thrift'
-
-    //store the output instead of printing to the console:
-    standardOutput = new ByteArrayOutputStream()
-
-    //extension method thrift.output() can be used to obtain the output:
-    ext.output = {
-        return standardOutput.toString()
-    }
-}
-
-//############
 
 // In this section you declare where to find the dependencies of your project
 dependencies {
