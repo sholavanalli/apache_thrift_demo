@@ -1,4 +1,4 @@
-# Apache thrift demo --
+# Apache thrift demo  
 
 Install thrift to compile .thrift files. On mac OS use "brew install thrift".  
  
