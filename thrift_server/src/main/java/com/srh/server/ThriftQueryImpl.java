@@ -6,7 +6,7 @@ import com.srh.server.generated.ThriftQueryResult;
 
 public class ThriftQueryImpl implements ThriftQueryRemote.Iface {
 
-    // v1.0 code
+    // v1.0
     /*@Override
     public ThriftQueryResult runQuery(String expression, int limit, int offset) throws ThriftQueryException {
         try {
@@ -20,6 +20,7 @@ public class ThriftQueryImpl implements ThriftQueryRemote.Iface {
         }
     }*/
 
+    // v2.0
     @Override
     public ThriftQueryResult runQuery(String expression, int limit, int offset, String aggType) throws ThriftQueryException {
         try {

@@ -4,10 +4,8 @@ import com.srh.server.generated.ThriftQueryOutputRecord;
 import com.srh.server.generated.ThriftQueryResult;
 import com.srh.server.generated.ThriftQueryType;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class QueryResult {
